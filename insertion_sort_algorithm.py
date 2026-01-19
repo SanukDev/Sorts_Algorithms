@@ -1,9 +1,10 @@
-arr = [22,34,25,12,64,11,90,88,45]
-cont=0
-for i in range(len(arr) -1):
-    for j in range(cont):
-        if arr[j] > arr[i+1]:
-            num = arr[j]
-            arr[j] = arr[i+1]
-            arr[i+1] = num
-    cont += 1
+arr = [5,2,3,7,4,8,6]
+for i in range(1,len(arr)):
+    print(arr)
+    if arr[i-1] > arr[i]:
+        num = arr[i-1]
+        arr[i-1] = arr[i]
+        arr[i] = num
+
+
+print(arr)
